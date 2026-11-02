@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Little World for Poorvika 💗</title>
+<style>
+:root{--pink:#ff5f9e;--deep:#b83270;--cream:#fff7fb;--ink:#54233d}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,sans-serif;background:var(--cream);color:var(--ink);overflow-x:hidden}
+#progress{position:fixed;top:0;left:0;height:4px;background:var(--pink);width:0;z-index:20}
+nav{position:sticky;top:0;z-index:10;display:flex;gap:8px;justify-content:center;flex-wrap:wrap;padding:12px;background:#fff9}
+nav a{color:var(--deep);text-decoration:none;font-size:.85rem;font-weight:700;padding:8px 12px;border-radius:30px}
+nav a:hover,nav a.active{background:#ffe0ed}
+.page{min-height:92vh;padding:70px 22px;display:grid;place-items:center;text-align:center;position:relative;overflow:hidden}
+.inner{max-width:760px;position:relative;z-index:2}
+h1{font-size:clamp(2.5rem,8vw,5.5rem);line-height:1.05;margin:12px 0;color:var(--deep)}
+h2{font-size:clamp(2rem,6vw,3.5rem);margin:8px 0 20px;color:var(--deep)}
+p{font-size:clamp(1.05rem,2.5vw,1.25rem);line-height:1.8}
+.tag{letter-spacing:3px;text-transform:uppercase;font-size:.75rem;font-weight:800;color:#c45b8b}
+.btn{border:0;background:var(--deep);color:white;border-radius:30px;padding:14px 24px;font-size:1rem;font-weight:700;cursor:pointer;text-decoration:none;display:inline-block;margin:10px}
+.btn.alt{background:white;color:var(--deep);border:1px solid #ffc1d9}
+.card{background:#fff;border:1px solid #ffe0ed;border-radius:28px;padding:28px;box-shadow:0 15px 50px #b8327015}
+.hero{background:radial-gradient(circle at 20% 20%,#ffe0ed,transparent 35%),linear-gradient(135deg,#fff7fb,#ffeaf2)}
+.soft{background:linear-gradient(135deg,#fff,#fff0f6)}
+.dark{background:linear-gradient(135deg,#7d2857,#c44e86);color:white}
+.dark h2,.dark h1,.dark .tag{color:white}
+.dark .card{color:var(--ink)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px;margin-top:25px}
+.tile{background:white;border-radius:22px;padding:22px;box-shadow:0 8px 28px #b8327010}
+.emoji{font-size:2.5rem;display:block;margin-bottom:10px}
+.bigheart{font-size:clamp(5rem,20vw,10rem);animation:pulse 1.5s infinite;filter:drop-shadow(0 8px 15px #ff5f9e55)}
+@keyframes pulse{50%{transform:scale(1.14)}}
+.float{position:absolute;bottom:-50px;opacity:.5;animation:rise linear infinite;pointer-events:none}
+@keyframes rise{to{transform:translateY(-115vh) rotate(25deg);opacity:0}}
+.sticker{position:absolute;font-size:clamp(2rem,5vw,4rem);animation:bob 3s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-18px) rotate(10deg)}}
+.note{font-size:.95rem;opacity:.8}
+#surprise{display:none;margin:20px auto 0;max-width:550px}
+footer{padding:25px;text-align:center;background:#fff0f6;color:#9b4770}
+</style>
+</head>
+<body>
+<div id="progress"></div>
+<nav>
+<a href="#home">Home</a><a href="#sorry">A note</a><a href="#memories">Little things</a><a href="#promise">Promise</a><a href="#surprise">Surprise</a>
+</nav>
+
+<section class="page hero" id="home">
+<div class="sticker" style="top:12%;left:8%">🧸</div><div class="sticker" style="right:9%;top:18%;animation-delay:.7s">🦋</div>
+<div class="inner">
+<div class="tag">A tiny website made with care</div>
+<div class="bigheart">💗</div>
+<h1>Hey, Poorvika!</h1>
+<p>There's something I wanted to say, so I made this little corner of the internet just for you.</p>
+<a class="btn" href="#sorry">Open your note ↓</a>
+</div></section>
+
+<section class="page soft" id="sorry">
+<div class="inner card">
+<div class="tag">Page 02 · From my heart</div>
+<h2>I'm sorry 🥺</h2>
+<p>I know that things may not have felt right, and I'm genuinely sorry if my words or actions hurt you. I never wanted to make you feel bad.</p>
+<p>I can't change what happened, but I can accept my mistake, learn from it, and try to do better. Your feelings matter, and I respect them.</p>
+<p class="note">No pressure to reply right away. I just wanted you to know this.</p>
+<a class="btn" href="#memories">Next page →</a>
+</div></section>
+
+<section class="page hero" id="memories">
+<div class="inner">
+<div class="tag">Page 03 · The little things</div><h2>Small things matter ✨</h2>
+<p>Sometimes it's the simple moments that make a friendship special.</p>
+<div class="grid">
+<div class="tile"><span class="emoji">😂</span><b>The random laughs</b><p class="note">Those silly moments that make an ordinary day better.</p></div>
+<div class="tile"><span class="emoji">🌷</span><b>The kindness</b><p class="note">The little gestures that never go unnoticed.</p></div>
+<div class="tile"><span class="emoji">🫶</span><b>The friendship</b><p class="note">Something I truly appreciate and don't take for granted.</p></div>
+</div><a class="btn" href="#promise">Keep going →</a>
+</div></section>
+
+<section class="page soft" id="promise">
+<div class="inner card">
+<div class="tag">Page 04 · A genuine promise</div><h2>I'll do better 🌈</h2>
+<p>I'll try to listen more, understand before reacting, and be more thoughtful with my words.</p>
+<p>I know a promise means little without actions, so I'll let my behaviour speak. And whatever you feel, I'll respect it.</p>
+<div class="bigheart" style="font-size:4rem">🤝💗</div>
+<a class="btn" href="#final">One last thing →</a>
+</div></section>
+
+<section class="page dark" id="final">
+<div class="inner">
+<div class="tag">Page 05 · Just for you</div><h2>A little surprise, Poorvika!</h2>
+<p>I hope this small page brings a tiny smile. You deserve kindness, peace, and lots of good days.</p>
+<button class="btn alt" onclick="document.getElementById('surprise').style.display='block';this.textContent='Surprise opened 💖'">Tap for a little surprise 🎁</button>
+<div class="card" id="surprise"><div class="bigheart" style="font-size:4rem">🌸💗🌸</div><h2>Sending you a virtual hug!</h2><p>Take care, smile lots, and thank you for being you. — Your friend</p></div>
+<a class="btn alt" href="#home">Back to the beginning ↑</a>
+</div></section>
+<footer>Made with 💗, just for Poorvika · A little friendship page</footer>
+<script>
+const progress=document.getElementById('progress');
+window.addEventListener('scroll',()=>{let max=document.documentElement.scrollHeight-innerHeight;progress.style.width=(max?scrollY/max*100:0)+'%'});
+const sections=[...document.querySelectorAll('.page')], links=[...document.querySelectorAll('nav a')];
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)links.forEach(a=>a.classList.toggle('active',a.hash==='#'+e.target.id))}),{threshold:.45});
+sections.forEach(s=>observer.observe(s));
+for(let i=0;i<18;i++){let el=document.createElement('span');el.className='float';el.textContent=['💗','✨','🌸','💕','🦋'][i%5];el.style.left=Math.random()*100+'%';el.style.animationDuration=(8+Math.random()*10)+'s';el.style.animationDelay=(-Math.random()*15)+'s';el.style.fontSize=(16+Math.random()*22)+'px';document.body.appendChild(el)}
+</script>
+</body></html>
